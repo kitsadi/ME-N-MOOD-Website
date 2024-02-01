@@ -52,6 +52,9 @@ def about():
     return app.send_static_file('about.html')
 
 # ---------------- Index Page ------------------------------------------------------------------
+@app.route('/')
+def home():
+    return redirect(url_for('diary_index'))
 @app.route('/diary', methods=('GET', 'POST'))
 def diary_index():
     if request.method == 'POST':

@@ -8,3 +8,4 @@ Flask-Login==0.6.2
 Authlib==1.2.0
 requests==2.28.2
 Flask-Mail==0.9.1
+Werkzeug==2.2.2
